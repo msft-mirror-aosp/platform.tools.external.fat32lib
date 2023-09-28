@@ -3,7 +3,10 @@ apply plugin: 'com.android.tools.java-library'
 apply plugin: 'sdk-java-lib'
 
 group = "com.android.tools.build"
-archivesBaseName = 'fat32lib'
+
+base {
+    archivesName.set("fat32lib")
+}
 
 javadoc.options.addStringOption('Xdoclint:none', '-quiet')
 
